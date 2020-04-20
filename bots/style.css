@@ -1,0 +1,200 @@
+:root {
+	--side-bg: linear-gradient(to bottom,
+			#58bc12 calc(100%*calc(1/35)),
+			#2188cd calc(100%*calc(1/35)) calc(100%*calc(2/35)),
+			#4a48d4 calc(100%*calc(2/35)) calc(100%*calc(3/35)),
+			#b5fd59 calc(100%*calc(3/35)) calc(100%*calc(4/35)),
+			#ae8f84 calc(100%*calc(4/35)) calc(100%*calc(5/35)),
+			#9e9400 calc(100%*calc(5/35)) calc(100%*calc(6/35)),
+			#ffb894 calc(100%*calc(6/35)) calc(100%*calc(7/35)),
+			#2ea94d calc(100%*calc(7/35)) calc(100%*calc(8/35)),
+			#9f270f calc(100%*calc(8/35)) calc(100%*calc(9/35)),
+			#da3ae7 calc(100%*calc(9/35)) calc(100%*calc(10/35)),
+			#9ccafd calc(100%*calc(10/35)) calc(100%*calc(11/35)),
+			#fe89f0 calc(100%*calc(11/35)) calc(100%*calc(12/35)),
+			#70fda8 calc(100%*calc(12/35)) calc(100%*calc(13/35)),
+			#bb3477 calc(100%*calc(13/35)) calc(100%*calc(14/35)),
+			#a7ad90 calc(100%*calc(14/35)) calc(100%*calc(15/35)),
+			#16f4f0 calc(100%*calc(15/35)) calc(100%*calc(16/35)),
+			#c46564 calc(100%*calc(16/35)) calc(100%*calc(17/35)),
+			#c8b1a3 calc(100%*calc(17/35)) calc(100%*calc(18/35)),
+			#f5702e calc(100%*calc(18/35)) calc(100%*calc(19/35)),
+			#ffd814 calc(100%*calc(19/35)) calc(100%*calc(20/35)),
+			#5183b6 calc(100%*calc(20/35)) calc(100%*calc(21/35)),
+			#ffc3d8 calc(100%*calc(21/35)) calc(100%*calc(22/35)),
+			#b4ffc3 calc(100%*calc(22/35)) calc(100%*calc(23/35)),
+			#3a3d4a calc(100%*calc(23/35)) calc(100%*calc(24/35)),
+			#fff766 calc(100%*calc(24/35)) calc(100%*calc(25/35)),
+			#95ff00 calc(100%*calc(25/35)) calc(100%*calc(26/35)),
+			#ffa0a2 calc(100%*calc(26/35)) calc(100%*calc(27/35)),
+			#686655 calc(100%*calc(27/35)) calc(100%*calc(28/35)),
+			#404072 calc(100%*calc(28/35)) calc(100%*calc(29/35)),
+			#3C1372 calc(100%*calc(29/35)) calc(100%*calc(30/35)),
+			#fff9b8 calc(100%*calc(30/35)) calc(100%*calc(31/35)),
+			#838fab calc(100%*calc(31/35)) calc(100%*calc(32/35)),
+			#FF1493 calc(100%*calc(32/35)) calc(100%*calc(33/35)),
+			#ecc6ea calc(100%*calc(33/35)) calc(100%*calc(34/35)),
+			#75837D calc(100%*calc(34/35)));
+}
+
+a:link {
+	color: #456a3c;
+}
+
+a:visited {
+	color: #456a3c;
+}
+
+a:hover {
+	color: #867e61;
+}
+
+.div1 {
+	z-index: 20;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: var(--side-bg);
+	width: 17%;
+	height: 100%;
+}
+
+.div2 {
+	z-index: 20;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: var(--side-bg);
+	width: 17%;
+	height: 100%;
+}
+
+.menu {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background-color: #2c665b;
+}
+
+.button {
+	margin-top: 2.5px;
+	border: none;
+	position: fixed;
+	height: 20px;
+	z-index: 100;
+	background-color: #9e8b44;
+	color: #43204b;
+}
+
+.button1 {
+	margin-left: 0px;
+}
+
+.button2 {
+	margin-left: 55px;
+}
+
+.button3 {
+	margin-left: 98px;
+}
+
+body {
+	background: linear-gradient(to right,
+			#595926 17.25%, #592630 17.25% 82.75%, #595926 82.75%);
+	color: #a6d9cf;
+}
+
+h1 {
+	text-align: center;
+	color: #b0d8a6;
+	margin-right: 8%;
+}
+
+h2 {
+	color: #cfa6d9;
+}
+
+h3 {
+	color: #cfa6d9;
+}
+
+h4 {
+	color: #cfa6d9;
+}
+
+h5 {
+	color: #a6d9cf;
+}
+
+h6 {
+	color: #a6d9cf;
+}
+
+footer {
+	text-align: center;
+	margin-right: 4%;
+	font-size: small;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+#myInput {
+	opacity: 0;
+	position: fixed;
+}
+
+#discord {
+	border: none;
+	background-color: #592630;
+}
+
+.foot {
+	margin-right: 3%;
+}
+
+.line {
+	position: relative;
+	right: 1.25%;
+	background-color: black;
+	height: 3px;
+	width: 106.75%;
+}
