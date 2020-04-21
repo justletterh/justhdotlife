@@ -101,6 +101,10 @@ a:hover {
 	margin-left: 98px;
 }
 
+.button4 {
+	margin-left: 141px;
+}
+
 body {
 	background: linear-gradient(to right,
 			#595926 17.25%, #592630 17.25% 82.75%, #595926 82.75%);
