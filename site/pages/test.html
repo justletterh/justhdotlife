@@ -8,6 +8,28 @@
   <link rel="icon" href="https://cdn.discordapp.com/avatars/690014289016389677/51c518a918de05bb895e5b75b72872d9.webp?size=1024">
   <meta charset="UTF-8">
   <meta name="author" content="h">
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    const button = new Crate({
+      server: '702592687622062091',
+      channel: '702608716804915301',
+      shard: 'https://e.widgetbot.io',
+      location: ['bottom', 'left'],
+      color: 'black',
+      defer: true,
+      notifications: true,
+      indicator: false,
+      css: 'background-color: #000000'
+    })
+    button.notify('click the icon in the corner to see our discord server!')
+    setInterval(() => {
+  button.options.notifications = false
+    }, 2750)
+    setInterval(() => {
+      button.options.color = "#000000".replace(/0/g, () => {
+            return (~~(Math.random() * 16)).toString(16)
+          })
+    }, 945)
+  </script>
 </head>
 <body leftmargin="18%">
   <div class="menu">
